@@ -12,10 +12,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Android SDK
-        run: git clone https://github.com/v-modal/vmodal_sdk_android.git
+        run: |
+          git clone https://github.com/v-modal/vmodal_sdk_android.git &
+          git clone https://github.com/v-modal/vmodal_sdk_flutter.git &
+          git clone https://github.com/v-modal/vmodal_sdk_robotics.git  &
+          git clone https://github.com/v-modal/vmodal_sdk_swift_iphoneduo.git 
+          python -m pip install vmodal
 
-      - name: Clone Flutter SDK
-        run: git clone https://github.com/v-modal/vmodal_sdk_flutter.git
+      - name: Clone Android SDK2
+        run: |
+          git clone https://github.com/v-modal/vmodal_sdk_android.git &
+          git clone https://github.com/v-modal/vmodal_sdk_flutter.git &
+          git clone https://github.com/v-modal/vmodal_sdk_robotics.git  &
+          git clone https://github.com/v-modal/vmodal_sdk_swift_iphoneduo.git 
+          python -m pip install vmodal
 
-      - name: Install vmodal
-        run: python -m pip install vmodal
+      - name: Clone Android SDK3
+        run: |
+          git clone https://github.com/v-modal/vmodal_sdk_android.git &
+          git clone https://github.com/v-modal/vmodal_sdk_flutter.git &
+          git clone https://github.com/v-modal/vmodal_sdk_robotics.git  &
+          git clone https://github.com/v-modal/vmodal_sdk_swift_iphoneduo.git 
+          python -m pip install vmodal
